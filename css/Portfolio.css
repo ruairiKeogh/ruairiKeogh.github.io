@@ -1,0 +1,37 @@
+.jumbotron{
+	background-image: url("../images/background.jpg");
+    margin-bottom: 0;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+	color: #FFFFFF;
+}
+
+.btn-group{
+	background-color: #ADD8E6;
+	color: #000000;
+}
+
+.aboutMe{
+    margin: 20px 20px 0 0;  
+    border: 5px solid #333;
+    overflow: auto
+}
+.post-thumb {
+    float: left;
+	text-align:center; 
+}
+.post-thumb img {
+	border-radius: 50%;
+	margin-left:2cm;
+    display: block
+}
+.post-content {
+    margin-left: 210px
+}
+.post-title {
+    font-weight: bold;
+    font-size: 200%
+}
