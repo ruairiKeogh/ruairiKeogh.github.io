@@ -35,3 +35,16 @@
     font-weight: bold;
     font-size: 200%
 }
+
+#myCarousel {
+    height: 300px;
+}
+
+#myCarousel.img{
+    float: center;
+    height: 300px;
+}
+
+#myCarousel.p{
+    float: right;
+}
