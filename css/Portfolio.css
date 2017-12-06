@@ -50,7 +50,17 @@ body{
 
 .carousel-inner > .item > img {
     margin: 0 auto;
+    opacity: 0.5;
 }
+
+.carousel-content {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    z-index: 20;
+    color: black;
+  }
 
 @keyframes animatedBackground {
     from { background-position: 0 0; }
@@ -90,3 +100,4 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
