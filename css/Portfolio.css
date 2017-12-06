@@ -1,3 +1,6 @@
+body{
+    font-weight: bold;
+}
 .jumbotron{
 	background-image: url("../images/background.jpg");
     margin-bottom: 0;
@@ -10,14 +13,14 @@
 }
 
 .btn-group{
-	background-color: #ADD8E6;
 	color: #000000;
 }
 
 .aboutMe{
-    margin: 20px 20px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+    overflow: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .post-thumb {
     float: left;
@@ -45,6 +48,45 @@
     height: 300px;
 }
 
-#myCarousel.p{
-    float: right;
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+#education{
+    background-image: url("../images/ittlogo.png");
+    margin-bottom: 0;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    background-position: 0px 0px;
+    animation: animatedBackground 40s linear infinite;
+}
+
+#tab-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#searchbar{
+    padding-top: 10px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images/background.jpg");
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

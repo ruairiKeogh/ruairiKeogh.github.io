@@ -38,7 +38,14 @@
 			<li><a href="#workExperience">		Work Experience	</a></li>
 			<li><a href="#skills">		Skills	</a></li>
 			</ul>
-		<button class="btn btn-danger navbar-btn" href="contactMe">Contact Me</button>
+		<button class="btn btn-lg btn-warning" href="contactMe">Contact Me</button>
+		<form action="http://www.google.com/search" method="get" class="pull-right" id="searchbar">
+		<fieldset>
+			<input type="hidden" name="sitesearch" value="ruairikeogh.github.io"/>
+			<input type="text" name="q" size="15" maxlength="255"  value=""/>
+			<input type="submit" value="Search"/>
+		</fieldset>
+		</form>
 		</div><!-- End Container -->
 	</div>
 	</nav><!-- End Navigation -->
@@ -47,7 +54,7 @@
 	<div class="jumbotron">
 		<div class="container text-center">
 		<h1>A Portfolio, <br/> By Ruairí Keogh</h1>
-		<p>This is my personal portfolio to assist with my search of a job relating to my Honours Bachelor Degree in Computing.</p>
+		<p>A personal portfolio, to assist with the search of jobs relating to my Honours Bachelor Degree in Computing.</p>
 		
 		<div class="btn-group">
 			<a href="files/RuairíKeoghCV.docx" download = "RuairíKeoghCV" class="btn btn-lg btn-warning" role = "button">Download CV</a>
@@ -73,13 +80,20 @@
 		</div>
 	</div>
 	
+	<div class="parallax"></div>
+
 	<!-- Education -->
 	<div class="education" id="education">
 		<div class="container text-center">
 		<h1>Education</h1>
 		<p>Here are some of my previous college results from studying Computing at the Institute of Technology Tallaght.</p>
-		
+		<p>You can see that each year has been seperated into each semester.</p>
+		<p>For 4th Year I have yet to receive my grades and for the second semester my modules are unknown at this time.</p>
+		<p>For 3rd Year I was working with the Department of Social Protection for the second semester so I only have 2 modules for that year.</p>
+		</div>	
+	</div>	
 
+	<div class="grades text-center" id="grades">
     		<ul class="nav nav-tab nav-justified">
 				<li role="presentation" class="active"><a href="#4thYear" data-toggle="tab">4th Year</a></li>		
 				<li role="presentation"><a href="#3rdYear" data-toggle="tab">3rd Year</a></li>		
@@ -87,7 +101,7 @@
 				<li role="presentation"><a href="#1stYear" data-toggle="tab">1st Year</a></li>	
 			</ul>
 	
-    		<div class="tab-content">
+    		<div class="tab-content" id="tab-content">
         		<div class="tab-pane fade in active" id="4thYear">
             		<div class="row">
 						<br />
@@ -238,7 +252,7 @@
 												<td>Software Quality Assurance & Testing</td>
 												<td>B</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<td>Discrete Mathematics</td>
 												<td>A</td>
 											</tr>
@@ -271,7 +285,7 @@
 													<td>Networking 2</td>
 													<td>B</td>
 												</tr>
-												<tr class="success">
+												<tr>
 													<td>Management Science</td>
 													<td>A</td>
 												</tr>
@@ -308,15 +322,15 @@
 												</tr>
 											</thead>
 											<tbody>      
-												<tr class="success">
+												<tr >
 													<td>Software Development 1</td>
 													<td>A</td>
 												</tr>
-												<tr class="success">
+												<tr>
 													<td>Computer Architecture</td>
 													<td>A</td>
 												</tr>
-												<tr class="success">
+												<tr>
 													<td>Fundamentals of Interfaces & Web</td>
 													<td>A</td>
 												</tr>
@@ -345,7 +359,7 @@
 													</tr>
 												</thead>
 												<tbody>      
-													<tr class="success">
+													<tr>
 														<td>Software Development 2</td>
 														<td>A</td>
 													</tr>
@@ -353,7 +367,7 @@
 														<td>Object Oriented System Analysis</td>
 														<td>B</td>
 													</tr>
-													<tr class="success">
+													<tr>
 														<td>Database Fundamentals</td>
 														<td>A</td>
 													</tr>
@@ -375,9 +389,10 @@
 								</div>
 							</div>
 			</div><!-- End Container -->
-		</div><!-- End Education -->
-	</div>
+	</div><!-- End Education -->
 	
+	<div class="parallax"></div>
+
 	<!-- Projects -->
 	<div class="projects" id="projects">
 		<div class="container text-center">
@@ -428,7 +443,9 @@
 
 		</div><!-- End Container -->
 	</div><!-- End Projects -->
-	
+
+	<div class="parallax"></div>
+
 	<!-- Contact Me -->
 	<div class="contactMe" id="contactMe">
 		<div class="container text-center">
@@ -439,7 +456,7 @@
 		
 		</div><!-- End Container -->
 	</div><!-- End Projects -->
-	
+
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</body>
