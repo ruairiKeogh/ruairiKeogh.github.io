@@ -6,12 +6,11 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	
 	<link type="text/css" href="./css/portfolio.css" rel="stylesheet">
   </head>
@@ -93,8 +92,10 @@
 		</div>	
 	</div>	
 
+	<div class="parallax"></div>
+	
 	<div class="grades text-center" id="grades">
-    		<ul class="nav nav-tab nav-justified">
+    		<ul class="nav nav-tab nav-justified" id="yeartabs">
 				<li role="presentation" class="active"><a href="#4thYear" data-toggle="tab">4th Year</a></li>		
 				<li role="presentation"><a href="#3rdYear" data-toggle="tab">3rd Year</a></li>		
 				<li role="presentation"><a href="#2ndYear" data-toggle="tab">2nd Year</a></li>		
@@ -462,7 +463,12 @@
 				<h4 class="modal-title">4th Year Project</h4>
 				</div>
 				<div class="modal-body">
-				<p>Bad attempt at cross platform application.</p>
+				<p>For my 4th Year Project I am aiming to create a new application based off the Dublin GAA website.</p>
+				<p>My application will scrape data from the website such as fixtures and results for various different competitions. From this 
+					users will be able to filter matches and request data visualisations regarding performances in previous matches.</p>
+				<p>There will also be addition functionality such as a squad selector where a user can choose a starting 15 players
+					 for a match from a collection of squad players.</p>
+					 <img src="images/gaasquad.png" alt="4th Year Project">
 				</div>
 				<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -480,7 +486,21 @@
 					<h4 class="modal-title">3rd Year Project</h4>
 					</div>
 					<div class="modal-body">
-					<p>ReSharper 4 life.</p>
+					<p>Throughout the second semester of 3rd Year I was working within the Department of Social Protection. It was during this time that myself
+						and 2 other students from IT Tallaght undertook a project based on the usefullness of the Visual Studio Tool ReSharper and how it can be
+						used within a team enviroment to enforce coding standards.</p>
+					<p>The main project was divided into 3 main sections </p>
+					<ul style="list-style-type:disc">
+							<li>Investigation of Coding Standards</li>
+							<li>Investigation of ReSharper</li>
+							<li>Implementation of ReSharper</li>
+					</ul>
+					<p>I was assigned the lead position for the Implementation of ReSharper. This involved downloading and installing ReSharper on my local machine 
+						so that I could customise the different settings so that the coding standards for the DSP could be enforced. From the investigation in the 
+						other 2 sections I was able to understand which coding standards should be enforced and how each should be customised so that they agreed with 
+						the actual work that was going on in DSP. This meant some settings such as naming conventions had to be altered to allow some capitals as the 
+						developers worked with a lot of abbreviations that were used on a day to day basis in the DSP.</p>
+						<img src="images/codingstandards.jpg" alt="4th Year Project"  width="80%">
 					</div>
 					<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -498,7 +518,15 @@
 						<h4 class="modal-title">2nd Year Project</h4>
 						</div>
 						<div class="modal-body">
-						<p>Java Swing Repping init.</p>
+						<p>In my second year of college I was asked to complete a project in either Java Swing or Play framework. I chose Java 
+							Swing as I felt I had stronger software development skills as opposed to web development. The idea for the project was 
+							to create a piece of software that could be used by a company to create a staff roster and keep track of staff holidays.</p>
+						<p>The project itself was enjoyable to work on as learning about Java Swing was interesting as it wasn't being tought as part of the
+							college curriculum any more. I soon learned how it was becoming outdated and the choice of Swing over Play Framework was probably incorrect looking back.</p>
+						<p>My role in this project was the functionality of logining in as both a normal user and admin user. These users represented an employee and 
+							employer. From here I created the functionality for a user to be able to create a new employee by completing a form which was then sent to 
+						a database where it would be stored. The employer could then retrieve a list of all employees and edit or delete an employee. </p>	
+						<p>N.B ADD IMAGE TO MODALS</p>	
 						</div>
 						<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -509,6 +537,137 @@
 
 	<div class="parallax"></div>
 
+	<div id="workExperience">
+		<div class="container">
+			<h1>Work Experience</h1>
+				<div class = "col-md-6" id="dsp">
+					<div class="container" id="logo">
+						<img class = "col-md-6" src="images/dsplogo.png" alt="DSP Logo">
+					</div>
+					<div id="text">	
+						<h2>The Department of Social Protection</h2>
+						<p>During 3rd Year of my college course I was employed by the Department of Social Protection. 
+							During this time I was involved in a team working on the in house system used by DSP clerical officers.
+							This project involved adding functionality that was formerly part of Fás.</p>
+						<p>My role at the beginning of my work placement was a software tester. This was to help introduce 
+							me to the system and how the team worked. After a month or so I was moved to the development side 
+							when the project moved into the second phase of development. It was here that I learned about ASP.NET and 
+							programming in C#.</p>
+						<p>Some of the skills I learned are listed bellow.</p>
+						<ul>
+							<li>Microsoft Visual Studio Team Foundation Server.</li>
+							<li>Microsoft Test Manager.</li>
+							<li>AGILE Methadology.</li>
+							<li>ASP.NET.</li>
+							<li>C# Language (Completed Microsoft Programming in C# Course).</li>
+							<li>Jenkins Continuous Integration.</li>
+							<li>Powershell Scripting.</li>
+						</ul>
+					</div>	
+				</div>
+				
+				<div class = "col-md-6" id="uniphar">
+					<div class="container" id="logo">
+						<img class = "col-md-6" src="images/unipharlogo.gif" alt="Uniphar Logo">
+					</div>
+					<div id="text">
+						<h2>Uniphar</h2>
+						<p>Throughout my time of studying in college I work for Uniphar as a Warehouse Operator. The 
+							main tasks are manual handling such as picking orders or stock control. Although I am not directly 
+							involved in an area of computing I am learning soft skills such as working well as a team and to deadlines.</p>
+						<p>Something else I have learned has been the importance of reliable and useable software. As I use a 
+							warehouse stock system on a daily basis it is important for the system to be reliable so that work can 
+							be completed without any issues. I have taken some aspects of design from the software I am familiar with which 
+							helps me with my understanding of user requirements.</p>	
+						<p>Some of the skills I learned are listed bellow.</p>
+						<ul>
+							<li>Working as a Team.</li>
+							<li>Punctuality.</li>
+							<li>Problem Solving.</li>
+							<li>Working of my Own Initiative.</li>
+							<li>Mannerly and Respectful.</li>
+							<li>Dependible.</li>
+							<li>Williness to Learn.</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div id="skills">
+		<div class="container" id="images">
+			<div class="container" id="titlebtn">
+				<h1>Skills</h1>
+				<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#more">Show More</button>
+			</div>
+			<div class="col-md-3" id="topRow">
+				<img src="images/javaswing.png" alt="Java Swing">
+				<span class="label label-warning center-block">Java Swing</span>
+			</div>
+			<div class="col-md-3" id="topRow">
+				<img src="images/java.png" alt="Java">
+				<span class="label label-warning center-block">Java</span>
+			</div>
+			<div class="col-md-3" id="topRow">
+				<img src="images/csharp.jpg" alt="C#">
+				<span class="label label-warning center-block">C#</span>
+			</div>
+			<div class="col-md-3" id="topRow">
+				<img src="images/c++.png" alt="C++">
+				<span class="label label-warning center-block">C++</span>
+			</div>
+
+			<div id="more" class="collapse">
+
+				<div class="col-md-3" id="secondRow">
+					<img src="images/html.png" alt="HTML">
+					<span class="label label-warning center-block">HTML</span>
+				</div>
+				<div class="col-md-3" id="secondRow">
+					<img src="images/css.jpg" alt="CSS">
+					<span class="label label-warning center-block">CSS</span>
+				</div>
+				<div class="col-md-3" id="secondRow">
+					<img src="images/bootstrap.png" alt="Bootstrap">
+					<span class="label label-warning center-block">Bootstrap</span>
+				</div>
+				<div class="col-md-3" id="secondRow">
+					<img src="images/javascript.png" alt="Javascript">
+					<span class="label label-warning center-block">Javascript</span>
+				</div>
+
+				<div class="col-md-3" id="thirdRow">
+					<img src="images/asp-net.png" alt="ASP.NET">
+					<span class="label label-warning center-block">ASP.NET</span>
+				</div>
+				<div class="col-md-3" id="thirdRow">
+					<img src="images/github.png" alt="Github">
+					<span class="label label-warning center-block">Github</span>
+				</div>
+				<div class="col-md-3" id="thirdRow">
+					<img src="images/mongodb.png" alt="MongoDB">
+					<span class="label label-warning center-block">MongoDB</span>
+				</div>
+				<div class="col-md-3" id="thirdRow">
+					<img src="images/sqlserver.png" alt="SQL Server">
+					<span class="label label-warning center-block">SQL Server</span>
+				</div>
+
+				<div class="col-md-3" id="lastRow">
+					<img src="images/tfs.png" alt="TFS">
+					<span class="label label-warning center-block">TFS</span>
+				</div>
+				<div class="col-md-3" id="lastRow">
+					<img src="images/powershell.png" alt="Powershell">
+					<span class="label label-warning center-block">Powershell</span>
+				</div>
+				<div class="col-md-3" id="lastRow">
+					<img src="images/microsoft-azure.png" alt="Microsoft Azure">
+					<span class="label label-warning center-block">Microsoft Azure</span>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Contact Me -->
 	<div class="contactMe" id="contactMe">
 		<div class="container text-center">
@@ -520,7 +679,6 @@
 		</div><!-- End Container -->
 	</div><!-- End Projects -->
 
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	</body>
 </html>

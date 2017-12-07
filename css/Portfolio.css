@@ -70,7 +70,7 @@ body{
 #education{
     background-image: url("../images/ittlogo.png");
     margin-bottom: 0;
-    height: 400px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center;
     color: #000000;
@@ -99,5 +99,44 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#projects{
+    padding-bottom: 50px;
+}
+
+#yeartabs li{
+    border-style: solid ;
+    border-color: rgb(54, 54, 236);
+}
+
+#uniphar{
+    float: right;
+}
+
+#logo{
+    float: left;
+}
+#text{
+    float: left;
+}
+
+#uniphar > #logo{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#skills img{
+    height: 200px;
+    width: 250px;
+    padding-left: 50px;
+}
+
+#skills > #images > #topRow{
+    padding-bottom: 10px;
+}
+
+#skills > #images > #titlebtn{
+    float: left;
 }
 
