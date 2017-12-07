@@ -10,9 +10,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	
-	<link type="text/css" href="./css/portfolio.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link type="text/css" href="./css/portfolio.css" rel="stylesheet">
   </head>
   
 	<body id="page-top">
@@ -36,8 +39,40 @@
 			<li><a href="#projects">		Projects	</a></li>
 			<li><a href="#workExperience">		Work Experience	</a></li>
 			<li><a href="#skills">		Skills	</a></li>
+			<li><a href="features.html">		Features	</a></li>
 			</ul>
-		<button class="btn btn-lg btn-warning" href="contactMe">Contact Me</button>
+			<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#contactMeModal">Contact Me</button>
+
+		<div id="contactMeModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Contact Me</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="pwd">Name:</label>
+								<input type="text" class="form-control" id="name">
+							</div>
+							<div class="form-group">
+								<label for="email">Email address:</label>
+								<input type="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label for="pwd">Message:</label>
+								<input type="text" class="form-control" id="message">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		<form action="http://www.google.com/search" method="get" class="pull-right" id="searchbar">
 		<fieldset>
 			<input type="hidden" name="sitesearch" value="ruairikeogh.github.io"/>
@@ -51,7 +86,9 @@
 	
 	<!-- Jumbotron -->
 	<div class="jumbotron">
+		<div class="post-thumb"><img src="images/profile.png" /></div>
 		<div class="container text-center">
+				
 		<h1>A Portfolio, <br/> By Ruairí Keogh</h1>
 		<p>A personal portfolio, to assist with the search of jobs relating to my Honours Bachelor Degree in Computing.</p>
 		
@@ -61,21 +98,19 @@
 		</div><!-- End Container -->
 	</div><!-- End Jumbotron -->
 	
-	<div class="aboutMe" id="aboutMe">                
-    	<div class="post-thumb"><img src="images/profile.png" />
-    	<p>Name: Ruairí Keogh</p>
-		<p>Age: 21</p>
-		<p>Area of Preference: Software Development</p>
-		<p>Location: South Dublin</p>
-    	</div>
-    <div class="post-content">
-        <h3 class="post-title">About Me</h3>
-        <p>I am currently a 4th Year student at the Institute of Technology Tallaght. IT Tallaght is a highly respected Institute which is seeking
-			the approval of a merger with DIT and BIT to create an amalgamated University of Technology.</p>
-		<p>My course is an Honours Bachelor Degree in Computing. I have learned skills throughout my 4 years of study such as Software Development, 
-			Databases, Networking, Web Design and many more! </p>
-		<p>I am hoping to graduate with a 2.1 Degree and persue a career in software development for the future.
-			Please feel free to connect with me on LinkedIn and check out my GitHub</p>
+	<div class="aboutMe" id="aboutMe">
+		<div class = "col-md-2" id="linkedIn">
+			<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+			<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ruairimichaelkeogh"><a class="LI-simple-link" href='https://ie.linkedin.com/in/ruairimichaelkeogh?trk=profile-badge'>Ruairí Keogh</a></div>	
+		</div>
+    	<div class = "col-md-9" id="aboutmecontent">
+			<h3 class="post-title">About Me</h3>
+			<p>I am currently a 4th Year student at the Institute of Technology Tallaght. IT Tallaght is a highly respected Institute which is seeking
+				the approval of a merger with DIT and BIT to create an amalgamated University of Technology.</p>
+			<p>My course is an Honours Bachelor Degree in Computing. I have learned skills throughout my 4 years of study such as Software Development, 
+				Databases, Networking, Web Design and many more! </p>
+			<p>I am hoping to graduate with a 2.1 Degree and persue a career in software development for the future.
+				Please feel free to connect with me on LinkedIn and check out my GitHub</p>
 		</div>
 	</div>
 	
@@ -594,6 +629,8 @@
 		</div>
 	</div>
 
+	<div class="parallax"></div>
+
 	<div id="skills">
 		<div class="container" id="images">
 			<div class="container" id="titlebtn">
@@ -668,16 +705,52 @@
 			</div>
 		</div>
 	</div>
-	<!-- Contact Me -->
-	<div class="contactMe" id="contactMe">
-		<div class="container text-center">
-		<h1>Contact Me</h1>
-		<p>Please feel free to contact me with any questions (or job offers) you may have.</p>
-		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-		<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ruairimichaelkeogh"><a class="LI-simple-link" href='https://ie.linkedin.com/in/ruairimichaelkeogh?trk=profile-badge'>Ruairí Keogh</a></div>	
-		
-		</div><!-- End Container -->
-	</div><!-- End Projects -->
+
+	<div class="parallax"></div>
+
+	<footer class="footer-distributed">			
+						<div class="footer-left">			
+							<h3>Ruairí<span>Keogh</span></h3>			
+							<p class="footer-links">
+								<a href="#aboutMe">About Me</a>
+								·
+								<a href="#education">Education</a>
+								·
+								<a href="#projects">Projects</a>
+								·
+								<a href="#workexperience">Work Experience</a>
+								·
+								<a href="#skills">Skills</a>
+							</p>			
+							<p class="footer-company-name">Portfolio Website &copy; 2015</p>
+						</div>			
+						<div class="footer-center">			
+							<div>
+								<i class="fa fa-map-marker"></i>
+								<p><span>Institute of Technology Tallaght</span> Dublin, Ireland</p>
+							</div>			
+							<div>
+								<i class="fa fa-phone"></i>
+								<p>+353 851234567</p>
+							</div>			
+							<div>
+								<i class="fa fa-envelope"></i>
+								<p><a href="mailto:ruairimichaelkeogh@gmail.com">ruairimichaelkeogh@gmail.com</a></p>
+							</div>			
+						</div>			
+						<div class="footer-right">			
+							<p class="footer-company-about">
+								<span>Please Feel Free to Contact Me</span>
+								If you have any questions relating to my website or myself please feel free to ask.
+							</p>			
+							<div class="footer-icons">			
+								<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+								<a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+								<a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a>
+								<a href="http://github.com"><i class="fa fa-github"></i></a>			
+							</div>			
+						</div>			
+					</footer>
 
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	</body>
